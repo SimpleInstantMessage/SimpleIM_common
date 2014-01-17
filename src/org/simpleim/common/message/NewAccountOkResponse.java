@@ -1,4 +1,4 @@
-package org.tempteam.simpleim.message;
+package org.simpleim.common.message;
 
 public class NewAccountOkResponse extends OkResponse {
 	private String id;
