@@ -3,9 +3,6 @@ package org.simpleim.common.message;
 public class LoginRequest extends Request{
   private String id;
   private String password;
-  public LoginRequest(){
-	  super();
-  }
   public String getId(){
 	  return id;
   }

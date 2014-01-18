@@ -4,9 +4,6 @@ public class SendMessageRequest extends Request {
     private User sender=new User();
     private String[] targetsIds;
     private ChatMessage message=new ChatMessage();
-    public SendMessageRequest(){
-    	super();
-    }
 	public User getSender() {
 		return sender;
 	}
@@ -17,7 +14,7 @@ public class SendMessageRequest extends Request {
 		return targetsIds;
 	}
 	/**
-	 * for循环赋值
+	 * 深拷贝
 	 */
 	public SendMessageRequest setTargetsIds(String [] targetsIds){
 		this.targetsIds=new String[targetsIds.length];

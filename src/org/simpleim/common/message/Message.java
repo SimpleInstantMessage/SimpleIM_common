@@ -13,5 +13,5 @@ public class Message {
 	public String getMessageType() {
 		return messageType;
 	}
-	
+
 }

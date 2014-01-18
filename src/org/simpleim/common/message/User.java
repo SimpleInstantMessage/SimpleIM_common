@@ -3,9 +3,6 @@ package org.simpleim.common.message;
 public class User{
       private  String id;
       private  String nikename;
-      public User(){
-    	  super();
-      }
       public String getId(){
     	  return id;
       }

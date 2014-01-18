@@ -1,9 +1,8 @@
 package org.simpleim.common.message;
 
 public class ChatMessage{
-   private long sendTime;
-   @SuppressWarnings("null")
-private long recieveTime=(Long) null;
+   private Long sendTime;
+private Long recieveTime;
    private String body;
    /**
 	 * You can use it like:
@@ -11,6 +10,7 @@ private long recieveTime=(Long) null;
 	 */
 public ChatMessage(){
 	super();
+	sendTime = System.currentTimeMillis();
 }
 public long getSendTime() {
 	return sendTime;

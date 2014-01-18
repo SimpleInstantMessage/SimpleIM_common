@@ -2,9 +2,6 @@ package org.simpleim.common.message;
 
 public class LoginNotification extends Notification{
    private String newUserId;
-   public LoginNotification(){
-	   super();
-   }
    public String getNewUserId() {
 	 return newUserId;
    }
