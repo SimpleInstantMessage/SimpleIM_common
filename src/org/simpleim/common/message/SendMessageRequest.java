@@ -1,9 +1,9 @@
 package org.simpleim.common.message;
 
 public class SendMessageRequest extends Request {
-	private User sender = new User();
+	private User sender;
 	private String[] targetsIds;
-	private ChatMessage message = new ChatMessage();
+	private ChatMessage message;
 
 	public User getSender() {
 		return sender;
@@ -17,14 +17,8 @@ public class SendMessageRequest extends Request {
 		return targetsIds;
 	}
 
-	/**
-	 * 深拷贝
-	 */
 	public SendMessageRequest setTargetsIds(String[] targetsIds) {
-		this.targetsIds = new String[targetsIds.length];
-		for (int i = 0; i < targetsIds.length; i++) {
-			this.targetsIds[i] = targetsIds[i];
-		}
+		this.targetsIds = targetsIds;
 		return this;
 	}
 

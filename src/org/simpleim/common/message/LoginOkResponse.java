@@ -8,10 +8,7 @@ public class LoginOkResponse {
 	}
 
 	public LoginOkResponse setOnlineUsersIds(String[] onlineUsersIds) {
-		onlineUsersIds = new String[onlineUsersIds.length];
-		for (int i = 0; i < onlineUsersIds.length; i++) {
-			this.onlineUsersIds[i] = onlineUsersIds[i];
-		}
+		this.onlineUsersIds = onlineUsersIds;
 		return this;
 	}
 
