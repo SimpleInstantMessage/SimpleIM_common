@@ -7,11 +7,11 @@ public class Message {
 		super();
 		messageType = this.getClass().getSimpleName();
 	}
-
 	/**
 	 * @return the messageType
 	 */
 	public String getMessageType() {
 		return messageType;
 	}
+	
 }
