@@ -37,4 +37,8 @@ public class NewAccountOkResponse extends OkResponse {
 		this.password = password;
 		return this;
 	}
+
+	public boolean isValid() {
+		return id != null && !id.isEmpty() && password != null;
+	}
 }
