@@ -1,6 +1,6 @@
 package org.simpleim.common.message;
 
-public class LoginOkResponse {
+public class LoginOkResponse extends OkResponse{
 	private String[] onlineUsersIds;
 
 	public String[] getOnlineUsersIds() {
