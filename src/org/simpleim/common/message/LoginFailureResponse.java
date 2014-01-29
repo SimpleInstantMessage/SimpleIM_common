@@ -3,7 +3,8 @@ package org.simpleim.common.message;
 public class LoginFailureResponse extends FailureResponse {
 	public static enum Cause {
 		ID_NOT_FOUND,
-		PASSWORD_INCORRECT
+		PASSWORD_INCORRECT,
+		IILEGAL_LOGIN
 	}
 
 	private Cause cause;
